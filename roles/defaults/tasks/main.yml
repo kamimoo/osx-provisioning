@@ -1,0 +1,222 @@
+- name: OS X Global | Show all extensions
+  osx_defaults:
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
+
+- name: OS X Global | Trackpad
+  osx_defaults:
+    key: com.apple.trackpad.scaling
+    type: float
+    value: 3.0
+
+- name: OS X Global | Do not keep windows
+  osx_defaults:
+    domain: com.apple.systempreferences
+    key: NSQuitAlwaysKeepsWindows
+    type: bool
+    value: false
+
+- name: Photos | Do not launch with hot plug
+  osx_defaults:
+    domain: com.apple.ImageCapture
+    key: disableHotPlug
+    type: bool
+    value: true
+
+- name: Safari | Developer menu
+  osx_defaults:
+    domain: com.apple.Safari
+    key: IncludeDevelopMenu
+    type: bool
+    value: true
+
+- name: Safari |
+  osx_defaults:
+    domain: com.apple.Safari
+    key: WebKitDeveloperExtrasEnabledPreferenceKey
+    type: bool
+    value: true
+
+- name: Safari |
+  osx_defaults:
+    domain: com.apple.Safari
+    key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
+    type: bool
+    value: true
+
+- name: OS X Global | Normal scrolling
+  osx_defaults:
+    key: com.apple.swipescrolldirection
+    type: bool
+    value: false
+
+- name: OS X Global | Save panel expanded
+  osx_defaults:
+    key: NSNavPanelExpandedStateForSaveMode
+    type: bool
+    value: true
+
+- name: OS X Global | Use function key to get at special meanings of keys
+  osx_defaults:
+    key: com.apple.keyboard.fnState
+    type: bool
+    value: true
+
+- name: OS X Global | Tab goes through all controls on dialogs
+  osx_defaults:
+    key: AppleKeyboardUIMode
+    type: int
+    value: 3
+
+- name: Dock | Quick autohide
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide-time-modifier
+    type: int
+    value: 1
+  notify: kill dock
+
+- name: Dock | Quick autohide
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide-delay
+    type: float
+    value: 0
+  notify: kill dock
+
+- name: Dock | Size
+  osx_defaults:
+    domain: com.apple.dock
+    key: tilesize
+    type: int
+    value: 48
+  notify: kill dock
+
+# - name: Dock | No persistent apps
+#   osx_defaults:
+#     domain: com.apple.dock
+#     key: persistent-apps
+#     array: []
+#   notify: kill dock
+
+- name: Dock | Quick expose
+  osx_defaults:
+    domain: com.apple.dock
+    key: expose-animation-duration
+    type: float
+    value: 0.1
+  notify: kill dock
+
+- name: Dock | Magnification
+  osx_defaults:
+    domain: com.apple.dock
+    key: magnification
+    type: bool
+    value: true
+  notify: kill dock
+
+- name: Dock | Make hidden applications' icons translucent
+  osx_defaults:
+    domain: com.apple.dock
+    key: showhidden
+    type: bool
+    value: true
+  notify: kill dock
+
+- name: Dock | Show only running applications
+  osx_defaults:
+    domain: com.apple.dock
+    key: static-only
+    type: bool
+    value: true
+  notify: kill dock
+
+- name: Dock | Dashboard disabled
+  osx_defaults:
+    domain: com.apple.dashboard
+    key: mcx-disabled
+    type: bool
+    value: true
+  notify: kill dock
+
+- name: Finder | Show all files
+  osx_defaults:
+    domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: true
+  notify: kill finder
+
+- name: Finder | Home folder on new windows
+  osx_defaults:
+    domain: com.apple.finder
+    key: NewWindowTarget
+    type: string
+    value: PfHm
+  notify: kill finder
+
+- name: Finder | Search the current folder first
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXDefaultSearchScope
+    type: string
+    value: SCcf
+  notify: kill finder
+
+- name: Finder | Show items in a list
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXPreferredViewStyle
+    type: string
+    value: Nlsv
+  notify: kill finder
+
+- name: Finder | Disable slow animations on shift
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXEnableSlowAnimation
+    type: bool
+    value: false
+  notify: kill finder
+
+- name: Finder | Quicklook hide on defocus
+  osx_defaults:
+    domain: com.apple.finder
+    key: QLHidePanelOnDeactivate
+    type: bool
+    value: true
+  notify: kill finder
+
+- name: Finder | Full paths in title
+  osx_defaults:
+    domain: com.apple.finder
+    key: _FXShowPosixPathInTitle
+    type: bool
+    value: true
+  notify: kill finder
+
+- name: Finder | Disable the warning when changing a file extension
+  osx_defaults:
+    domain: com.apple.finder
+    key: FXEnableExtensionChangeWarning
+    type: bool
+    value: true
+  notify: kill finder
+
+- name: DesktopService | Do not create .DS_Store on network drives
+  osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteNetworkStores
+    type: bool
+    value: true
+
+- name: screencapture | Location for screen capture
+  osx_defaults:
+    domain: com.apple.screencapture
+    key: location
+    type: bool
+    value: false
+
+
+- command: chflags nohidden ~/Library/
