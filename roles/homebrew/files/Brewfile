@@ -1,0 +1,114 @@
+cask_args appdir: '/Applications'
+tap 'argon/mas'
+tap 'caskroom/cask'
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+tap 'homebrew/dupes'
+tap 'homebrew/fuse'
+tap 'sanemat/font'
+cask 'osxfuse'
+brew 'autoconf'
+brew 'automake'
+brew 'bitrise'
+brew 'boost'
+brew 'libpng'
+brew 'freetype'
+brew 'fontconfig'
+brew 'gettext'
+brew 'libffi'
+brew 'pcre'
+brew 'glib'
+brew 'pixman'
+brew 'cairo'
+brew 'carthage'
+brew 'cmake'
+brew 'colordiff'
+brew 'coreutils'
+brew 'curl'
+brew 'zeromq'
+brew 'czmq'
+brew 'lame'
+brew 'x264'
+brew 'xvid'
+brew 'ffmpeg'
+brew 'pcre2'
+brew 'fish'
+brew 'jpeg'
+brew 'libtiff'
+brew 'libtool'
+brew 'pkg-config'
+brew 'gobject-introspection'
+brew 'icu4c'
+brew 'harfbuzz'
+brew 'pango'
+brew 'fontforge'
+brew 'gdbm'
+brew 'git-flow'
+brew 'go'
+brew 'intltool'
+brew 'openssl'
+brew 'libevent'
+brew 'libidn'
+brew 'libsodium'
+brew 'libxml2'
+brew 'libxslt'
+brew 'peco'
+brew 'ruby-build'
+brew 'rbenv'
+brew 'readline'
+brew 'reattach-to-user-namespace'
+brew 'rlog'
+brew 'tmux'
+brew 'utf8proc'
+brew 'wget', args: ['with-iri']
+brew 'swiftlint'
+brew 'xctool'
+brew 'xz'
+brew 'zsh', args: ['without-etcdir']
+brew 'argon/mas/mas'
+brew 'homebrew/dupes/libiconv'
+brew 'homebrew/fuse/encfs'
+brew 'sanemat/font/ricty', args: ['powerline', 'vim-powerline']
+cask 'alfred'
+cask 'aquaskk'
+cask 'bartender'
+cask 'bitbar'
+cask 'charles'
+cask 'dash'
+cask 'duet'
+cask 'firefox'
+cask 'imageoptim'
+cask 'iterm2'
+cask 'hyperswitch'
+cask 'macpass'
+cask 'provisionql'
+cask 'sourcetree'
+cask 'srware-iron'
+cask 'visual-studio-code'
+cask 'xquartz'
+mas 'iThoughtsX', id: 720669838
+mas 'Day One Classic', id: 422304217
+mas 'Pixelmator', id: 407963104
+mas 'Deckset', id: 847496013
+mas 'Affinity Designer', id: 824171161
+mas 'DrCleanerPro', id: 1037994372
+mas 'Sip', id: 507257563
+mas 'SQLPro for SQLite', id: 586001240
+mas 'Monosnap', id: 540348655
+mas 'Disk Diet', id: 445512770
+mas 'Pushbullet', id: 948415170
+mas 'WiFi Signal', id: 525912054
+mas 'MenuMate', id: 518594271
+mas 'Gemini', id: 463541543
+mas '1Keyboard', id: 766939888
+mas 'Pocket', id: 568494494
+mas 'ForkLift', id: 412448059
+mas 'OneDrive', id: 823766827
+mas 'RB App Checker Lite', id: 519421117
+mas 'Slack', id: 803453959
+mas 'ReadKit', id: 588726889
+mas 'Microsoft OneNote', id: 784801555
+mas 'CotEditor', id: 1024640650
+mas 'Divvy', id: 413857545
+mas 'Quiver', id: 866773894
+mas 'LINE', id: 539883307

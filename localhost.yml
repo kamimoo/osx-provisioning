@@ -1,0 +1,10 @@
+---
+- name: Setup my Mac
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  environment:
+    HOMEBREW_NO_ANALYTICS: 1
+  
+  roles:
+    - { role: homebrew, tags: [ homebrew ] }
