@@ -1,0 +1,91 @@
+---
+homebrew_taps:
+  - argon/mas
+  - caskroom/cask
+  - homebrew/core
+  - homebrew/dupes
+  - homebrew/fuse
+  - sanemat/font
+
+homebrew_packages:
+  - { name: autoconf }
+  - { name: automake }
+  - { name: bitrise }
+  - { name: boost }
+  - { name: libpng }
+  - { name: freetype }
+  - { name: fontconfig }
+  - { name: gettext }
+  - { name: libffi }
+  - { name: pcre }
+  - { name: glib }
+  - { name: pixman }
+  - { name: cairo }
+  - { name: carthage }
+  - { name: cmake }
+  - { name: colordiff }
+  - { name: coreutils }
+  - { name: curl }
+  - { name: zeromq }
+  - { name: czmq }
+  - { name: lame }
+  - { name: x264 }
+  - { name: xvid }
+  - { name: ffmpeg }
+  - { name: pcre2 }
+  - { name: fish }
+  - { name: jpeg }
+  - { name: libtiff }
+  - { name: libtool }
+  - { name: pkg-config }
+  - { name: gobject-introspection }
+  - { name: icu4c }
+  - { name: harfbuzz }
+  - { name: pango }
+  - { name: fontforge }
+  - { name: gdbm }
+  - { name: git-flow }
+  - { name: go }
+  - { name: intltool }
+  - { name: openssl }
+  - { name: libevent }
+  - { name: libidn }
+  - { name: libsodium }
+  - { name: libxml2 }
+  - { name: libxslt }
+  - { name: peco }
+  - { name: ruby-build }
+  - { name: rbenv }
+  - { name: readline }
+  - { name: reattach-to-user-namespace }
+  - { name: rlog }
+  - { name: tmux }
+  - { name: utf8proc }
+  - { name: wget, args: 'with-iri' }
+  - { name: swiftlint }
+  - { name: xctool }
+  - { name: xz }
+  - { name: zsh, args: 'without-etcdir' }
+  - { name: argon/mas/mas }
+  - { name: homebrew/dupes/libiconv }
+  - { name: homebrew/fuse/encfs }
+  - { name: sanemat/font/ricty, args: 'powerline,vim-powerline' }
+
+homebrew_cask_packages:
+  - { name: alfred }
+  - { name: aquaskk }
+  - { name: bartender }
+  - { name: bitbar }
+  - { name: charles }
+  - { name: dash }
+  - { name: duet }
+  - { name: firefox }
+  - { name: imageoptim }
+  - { name: iterm2 }
+  - { name: hyperswitch }
+  - { name: macpass }
+  - { name: provisionql }
+  - { name: sourcetree }
+  - { name: srware-iron }
+  - { name: visual-studio-code }
+  - { name: xquartz }
