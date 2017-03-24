@@ -1,0 +1,26 @@
+---
+mas_apps:
+  - { name: "iThoughtsX", id: 720669838 }
+  - { name: "Day One Classic", id: 422304217 }
+  - { name: "Pixelmator", id: 407963104 }
+  - { name: "Deckset", id: 847496013 }
+  - { name: "Affinity Designer", id: 824171161 }
+  - { name: "DrCleanerPro", id: 1037994372 }
+  - { name: "Sip", id: 507257563 }
+  - { name: "SQLPro for SQLite", id: 586001240 }
+  - { name: "Monosnap", id: 540348655 }
+  - { name: "Disk Diet", id: 445512770 }
+  - { name: "Pushbullet", id: 948415170 }
+  - { name: "WiFi Signal", id: 525912054 }
+  - { name: "MenuMate", id: 518594271 }
+  - { name: "Gemini", id: 463541543 }
+  - { name: "Pocket", id: 568494494 }
+  - { name: "ForkLift", id: 412448059 }
+  - { name: "OneDrive", id: 823766827 }
+  - { name: "RB App Checker Lite", id: 519421117 }
+  - { name: "Slack", id: 803453959 }
+  - { name: "Microsoft OneNote", id: 784801555 }
+  - { name: "CotEditor", id: 1024640650 }
+  - { name: "Divvy", id: 413857545 }
+  - { name: "Quiver", id: 866773894 }
+  - { name: "LINE", id: 539883307 }

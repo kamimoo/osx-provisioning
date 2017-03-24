@@ -8,4 +8,12 @@
   
   roles:
     - { role: homebrew, tags: [ homebrew ] }
+    - { role: mas, tags: [ mas ] }
     - { role: defaults, tags: [ defaults ] }
+
+  vars_prompt:
+    - name: "mas_email"
+      prompt: "Apple ID for mas"
+      private: no
+    - name: "mas_password"
+      prompt: "Password for mas"
