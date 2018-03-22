@@ -1,6 +1,6 @@
 ---
 - name: Setup my Mac
-  hosts: localhost
+  hosts: mac
   connection: local
   gather_facts: no
   environment:
