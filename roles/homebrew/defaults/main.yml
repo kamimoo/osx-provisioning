@@ -3,8 +3,6 @@ homebrew_taps:
   - argon/mas
   - caskroom/cask
   - homebrew/core
-  - homebrew/dupes
-  - homebrew/fuse
   - sanemat/font
 
 homebrew_packages:
@@ -67,8 +65,8 @@ homebrew_packages:
   - { name: xz }
   - { name: zsh, args: 'without-etcdir' }
   - { name: argon/mas/mas }
-  - { name: homebrew/dupes/libiconv }
-  - { name: homebrew/fuse/encfs }
+  - { name: libiconv }
+  - { name: encfs }
   - { name: sanemat/font/ricty, args: 'powerline,vim-powerline' }
 
 homebrew_cask_packages:
