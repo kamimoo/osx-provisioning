@@ -9,7 +9,7 @@
 - name: Install homebrew
   shell: >
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  when: result|failed
+  when: result is failed
 
 - name: Update Homebrew
   homebrew: update_homebrew=yes

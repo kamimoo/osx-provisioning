@@ -10,7 +10,7 @@
 - name: Sign in to MAS
   command: >
     mas signin "{{ mas_email }}" "{{ mas_password }}"
-  when: result|failed
+  when: result is failed
 
 - name: Install applications via mas
   command: mas install "{{ item.id }}"
