@@ -1,9 +1,4 @@
-- name: OS X Global | Show all extensions
-  osx_defaults:
-    key: AppleShowAllExtensions
-    type: bool
-    value: true
-
+---
 - name: OS X Global | Trackpad
   osx_defaults:
     key: com.apple.trackpad.scaling
@@ -14,6 +9,42 @@
   osx_defaults:
     domain: com.apple.systempreferences
     key: NSQuitAlwaysKeepsWindows
+    type: bool
+    value: false
+
+- name: OS X Global | Normal scrolling
+  osx_defaults:
+    key: com.apple.swipescrolldirection
+    type: bool
+    value: false
+
+- name: OS X Global | Save panel expanded
+  osx_defaults:
+    key: NSNavPanelExpandedStateForSaveMode
+    type: bool
+    value: true
+
+- name: OS X Global | Save panel expanded
+  osx_defaults:
+    key: NSNavPanelExpandedStateForSaveMode2
+    type: bool
+    value: true
+
+- name: OS X Global | Use function key to get at special meanings of keys
+  osx_defaults:
+    key: com.apple.keyboard.fnState
+    type: bool
+    value: true
+
+- name: OS X Global | Tab goes through all controls on dialogs
+  osx_defaults:
+    key: AppleKeyboardUIMode
+    type: int
+    value: 3
+
+- name: OS X Global | Disable auto correct
+  osx_defaults:
+    key: NSAutomaticSpellingCorrectionEnabled
     type: bool
     value: false
 
@@ -31,43 +62,34 @@
     type: bool
     value: true
 
-- name: Safari |
+- name: Safari | Developer menu
   osx_defaults:
     domain: com.apple.Safari
     key: WebKitDeveloperExtrasEnabledPreferenceKey
     type: bool
     value: true
 
-- name: Safari |
+- name: Safari | Developer menu
   osx_defaults:
     domain: com.apple.Safari
     key: com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled
     type: bool
     value: true
 
-- name: OS X Global | Normal scrolling
+- name: Safari | Show Debug menu
   osx_defaults:
-    key: com.apple.swipescrolldirection
-    type: bool
-    value: false
-
-- name: OS X Global | Save panel expanded
-  osx_defaults:
-    key: NSNavPanelExpandedStateForSaveMode
+    domain: com.apple.Safari
+    key: IncludeInternalDebugMenu
     type: bool
     value: true
 
-- name: OS X Global | Use function key to get at special meanings of keys
+
+- name: App Store | Show Debug menu
   osx_defaults:
-    key: com.apple.keyboard.fnState
+    domain: com.apple.appstore
+    key: ShowDebugMenu
     type: bool
     value: true
-
-- name: OS X Global | Tab goes through all controls on dialogs
-  osx_defaults:
-    key: AppleKeyboardUIMode
-    type: int
-    value: 3
 
 - name: Dock | Quick autohide
   osx_defaults:
@@ -93,12 +115,13 @@
     value: 48
   notify: kill dock
 
-# - name: Dock | No persistent apps
-#   osx_defaults:
-#     domain: com.apple.dock
-#     key: persistent-apps
-#     array: []
-#   notify: kill dock
+- name: Dock | No persistent apps
+  osx_defaults:
+    domain: com.apple.dock
+    key: persistent-apps
+    type: array
+    value: []
+  notify: kill dock
 
 - name: Dock | Quick expose
   osx_defaults:
@@ -139,6 +162,13 @@
     type: bool
     value: true
   notify: kill dock
+
+- name: Finder | Show all extensions
+  osx_defaults:
+    key: AppleShowAllExtensions
+    type: bool
+    value: true
+  notify: kill finder
 
 - name: Finder | Show all files
   osx_defaults:
@@ -211,12 +241,35 @@
     type: bool
     value: true
 
-- name: screencapture | Location for screen capture
+- name: DesktopService | Do not create .DS_Store on usb drives
+  osx_defaults:
+    domain: com.apple.desktopservices
+    key: DSDontWriteUSBStores
+    type: bool
+    value: true
+
+- name: Screen capture | Location for screen capture
   osx_defaults:
     domain: com.apple.screencapture
     key: location
+    value: "~/Screenshots"
+  notify: kill uiserver
+
+- name: Screen capture | Type of screen capture
+  osx_defaults:
+    domain: com.apple.screencapture
+    key: type
+    type: string
+    value: png
+  notify: kill uiserver
+
+- name: Printing | Quit Printer App after print job complete
+  osx_defaults:
+    domain: com.apple.print.PrintingPrefs
+    key: "Quit When Finished"
     type: bool
-    value: false
+    value: true
 
 
-- command: chflags nohidden ~/Library/
+- name: Show $HOME/Library
+  command: chflags nohidden ~/Library/

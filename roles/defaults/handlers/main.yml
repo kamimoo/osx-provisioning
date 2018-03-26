@@ -3,3 +3,6 @@
 
 - name: kill finder
   command: killall Finder
+
+- name: kill uiserver
+  command: killall SystemUIServer
