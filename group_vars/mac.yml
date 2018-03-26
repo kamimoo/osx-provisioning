@@ -2,6 +2,7 @@
 homebrew_taps:
   - argon/mas
   - caskroom/cask
+  - caskroom/fonts
   - homebrew/core
   - sanemat/font
 
@@ -29,7 +30,7 @@ homebrew_packages:
   - { name: lame }
   - { name: x264 }
   - { name: xvid }
-  - { name: ffmpeg }
+  - { name: ffmpeg, args: 'with-fdk-aac,with-tools,woth-freetype,with-libass,withlibvorbis,with-libvpx,with-x265' }
   - { name: pcre2 }
   - { name: fish }
   - { name: jpeg }
@@ -72,12 +73,19 @@ homebrew_packages:
 homebrew_cask_packages:
   - { name: alfred }
   - { name: aquaskk }
+  - { name: appcleaner }
   - { name: bartender }
   - { name: bitbar }
   - { name: charles }
   - { name: dash }
+  - { name: dropbox }
   - { name: duet }
   - { name: firefox }
+  - { name: font-noto-color-emoji }
+  - { name: font-noto-emoji }
+  - { name: font-noto-sans-cjk-jp }
+  - { name: font-noto-serif-cjk-jp }
+  - { name: franz }
   - { name: imageoptim }
   - { name: iterm2 }
   - { name: hyperswitch }
