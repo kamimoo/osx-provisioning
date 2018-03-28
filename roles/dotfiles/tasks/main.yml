@@ -1,0 +1,7 @@
+---
+- name: Clone configs to XDG_CONFIG_HOME
+  git:
+    repo: 'https://github.com/kamimoo/configs'
+    dest: "{{ home_dir }}/.config"
+    update: no
+
