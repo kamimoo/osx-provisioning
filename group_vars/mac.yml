@@ -49,6 +49,7 @@ homebrew_packages:
   - { name: go }
   - { name: intltool }
   - { name: openssl }
+  - { name: neovim }
   - { name: libevent }
   - { name: libidn }
   - { name: libsodium }
