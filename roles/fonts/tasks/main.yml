@@ -1,0 +1,11 @@
+---
+- name: Copy Ricty fonts to Fonts
+  copy:
+    src: "{{ item }}"
+    dest: "{{ home_dir }}/Library/Fonts"
+    remote_src: yes
+  with_fileglob: /usr/local/opt/ricty/share/fonts/Ricty*.ttf
+
+- name: Clear font cache
+  command: fc-cache -vf
+

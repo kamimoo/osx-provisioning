@@ -8,9 +8,10 @@
   
   roles:
     - dotfiles
-    - { role: homebrew, tags: [ homebrew ] }
-    - { role: mas, tags: [ mas ] }
-    - { role: defaults, tags: [ defaults ] }
+    - homebrew
+    - fonts
+    - mas
+    - defaults
     - fish
 
   vars:

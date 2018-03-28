@@ -70,7 +70,7 @@ homebrew_packages:
   - { name: argon/mas/mas }
   - { name: libiconv }
   - { name: encfs }
-  - { name: sanemat/font/ricty, args: 'powerline,vim-powerline' }
+  - { name: sanemat/font/ricty, args: 'with-powerline' }
   - { name: fisherman/tap/fisherman }
 
 homebrew_cask_packages:
