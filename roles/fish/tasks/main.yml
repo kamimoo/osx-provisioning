@@ -1,0 +1,12 @@
+---
+- name: Enable fish as a login shell
+  lineinfile:
+    path: /etc/shells
+    line: /usr/local/bin/fish
+  become: yes
+
+- name: Change login shell
+  command: chsh -s /usr/local/bin/fish
+
+- name: Install plugins
+  command: fish -c fisher

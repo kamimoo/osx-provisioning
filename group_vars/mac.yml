@@ -5,6 +5,7 @@ homebrew_taps:
   - caskroom/fonts
   - homebrew/core
   - sanemat/font
+  - fisherman/tap
 
 homebrew_packages:
   - { name: autoconf }
@@ -33,6 +34,7 @@ homebrew_packages:
   - { name: ffmpeg, args: 'with-fdk-aac,with-tools,woth-freetype,with-libass,withlibvorbis,with-libvpx,with-x265' }
   - { name: pcre2 }
   - { name: fish }
+  - { name: fzf }
   - { name: jpeg }
   - { name: libtiff }
   - { name: libtool }
@@ -69,6 +71,7 @@ homebrew_packages:
   - { name: libiconv }
   - { name: encfs }
   - { name: sanemat/font/ricty, args: 'powerline,vim-powerline' }
+  - { name: fisherman/tap/fisherman }
 
 homebrew_cask_packages:
   - { name: alfred }

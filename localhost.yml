@@ -11,6 +11,7 @@
     - { role: homebrew, tags: [ homebrew ] }
     - { role: mas, tags: [ mas ] }
     - { role: defaults, tags: [ defaults ] }
+    - fish
 
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
