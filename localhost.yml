@@ -13,6 +13,7 @@
     - mas
     - defaults
     - fish
+    - iterm2
 
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
