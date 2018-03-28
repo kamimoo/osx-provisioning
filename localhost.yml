@@ -11,6 +11,9 @@
     - { role: mas, tags: [ mas ] }
     - { role: defaults, tags: [ defaults ] }
 
+  vars:
+    home_dir: "{{ lookup('env', 'HOME') }}"
+
   vars_prompt:
     - name: "mas_email"
       prompt: "Apple ID for mas"
