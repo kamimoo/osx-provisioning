@@ -3,6 +3,7 @@ homebrew_taps:
   - argon/mas
   - caskroom/cask
   - caskroom/fonts
+  - caskroom/versions
   - homebrew/core
   - sanemat/font
   - fisherman/tap
@@ -10,7 +11,6 @@ homebrew_taps:
 homebrew_packages:
   - { name: autoconf }
   - { name: automake }
-  - { name: bitrise }
   - { name: boost }
   - { name: libpng }
   - { name: freetype }
@@ -67,36 +67,39 @@ homebrew_packages:
   - { name: swiftlint }
   - { name: xctool }
   - { name: xz }
-  - { name: zsh, args: 'without-etcdir' }
   - { name: argon/mas/mas }
   - { name: libiconv }
   - { name: encfs }
-  - { name: sanemat/font/ricty, args: 'with-powerline' }
   - { name: fisherman/tap/fisherman }
 
 homebrew_cask_packages:
   - { name: alfred }
-  - { name: aquaskk }
   - { name: appcleaner }
+  - { name: aquaskk }
   - { name: bartender }
   - { name: bitbar }
   - { name: charles }
   - { name: dash }
   - { name: dropbox }
   - { name: duet }
+  - { name: dynalist }
   - { name: firefox }
+  - { name: font-cica }
   - { name: font-noto-color-emoji }
   - { name: font-noto-emoji }
   - { name: font-noto-sans-cjk-jp }
   - { name: font-noto-serif-cjk-jp }
   - { name: franz }
+  - { name: hyperswitch }
   - { name: imageoptim }
   - { name: iterm2 }
-  - { name: hyperswitch }
+  - { name: java8 }
   - { name: macpass }
   - { name: provisionql }
+  - { name: rambox }
   - { name: sourcetree }
   - { name: srware-iron }
+  - { name: the-unarchiver }
   - { name: visual-studio-code }
   - { name: xquartz }
 
