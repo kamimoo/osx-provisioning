@@ -1,10 +1,9 @@
 ---
 homebrew_taps:
   - argon/mas
-  - caskroom/cask
-  - caskroom/fonts
-  - caskroom/versions
   - homebrew/core
+  - homebrew/cask-fonts
+  - homebrew/cask-versions
   - sanemat/font
   - fisherman/tap
 
