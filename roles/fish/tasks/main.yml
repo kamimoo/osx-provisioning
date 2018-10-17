@@ -7,6 +7,3 @@
 
 - name: Change login shell
   command: chsh -s /usr/local/bin/fish
-
-- name: Install plugins
-  command: fish -c fisher

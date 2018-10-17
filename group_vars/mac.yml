@@ -5,7 +5,6 @@ homebrew_taps:
   - homebrew/cask-fonts
   - homebrew/cask-versions
   - sanemat/font
-  - fisherman/tap
 
 homebrew_packages:
   - { name: autoconf }
@@ -69,7 +68,6 @@ homebrew_packages:
   - { name: argon/mas/mas }
   - { name: libiconv }
   - { name: encfs }
-  - { name: fisherman/tap/fisherman }
 
 homebrew_cask_packages:
   - { name: alfred }
