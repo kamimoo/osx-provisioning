@@ -21,6 +21,7 @@
 - name: Install OSXFUSE
   homebrew_cask:
     name: osxfuse
+    sudo_password: "{{ ansible_become_pass }}"
 
 - name: Install Homebrew packages
   homebrew:
@@ -32,4 +33,5 @@
 - name: Install Homebrew-Cask packages
   homebrew_cask:
     name: "{{ item.name }}"
+    sudo_password: "{{ ansible_become_pass }}"
   with_items: "{{ homebrew_cask_packages }}"

@@ -17,8 +17,11 @@
 
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
+    current_user: "{{ lookup('env', 'USER') }}"
 
   vars_prompt:
+    - name: "ansible_become_pass"
+      prompt: "sudo password"
     - name: "mas_email"
       prompt: "Apple ID for mas"
       private: no

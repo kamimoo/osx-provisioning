@@ -6,4 +6,5 @@
   become: yes
 
 - name: Change login shell
-  command: chsh -s /usr/local/bin/fish
+  command: chsh -s /usr/local/bin/fish {{ current_user }}
+  become: yes
