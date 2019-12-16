@@ -16,7 +16,7 @@
   osx_defaults:
     key: com.apple.swipescrolldirection
     type: bool
-    value: false
+    value: true
 
 - name: OS X Global | Save panel expanded
   osx_defaults:
@@ -83,6 +83,11 @@
     type: bool
     value: true
 
+- name: Safari | Show Debug menu
+  osx_defaults:
+    key: WebKitDeveloperExtras
+    type: bool
+    value: true
 
 - name: App Store | Show Debug menu
   osx_defaults:
@@ -105,6 +110,14 @@
     key: autohide-delay
     type: float
     value: 0
+  notify: kill dock
+
+- name: Dock | Autohide
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
   notify: kill dock
 
 - name: Dock | Size
@@ -199,7 +212,7 @@
     domain: com.apple.finder
     key: FXPreferredViewStyle
     type: string
-    value: Nlsv
+    value: clmv
   notify: kill finder
 
 - name: Finder | Disable slow animations on shift
@@ -230,6 +243,22 @@
   osx_defaults:
     domain: com.apple.finder
     key: FXEnableExtensionChangeWarning
+    type: bool
+    value: true
+  notify: kill finder
+
+- name: Finder | Show "Quit Finder" menu item
+  osx_defaults:
+    domain: com.apple.finder
+    key: QuitMenuItem
+    type: bool
+    value: true
+  notify: kill finder
+
+- name: Finder | Disable animation when opening the Info window
+  osx_defaults:
+    domain: com.apple.finder
+    key: DisableAllAnimations
     type: bool
     value: true
   notify: kill finder
@@ -270,6 +299,12 @@
     type: bool
     value: true
 
+- name: CrashReporter | Make crash reporter as a notification
+  osx_defaults:
+    domain: com.apple.CrashReporter
+    key: UseUNC
+    type: int
+    value: 1
 
 - name: Show $HOME/Library
-  command: chflags nohidden ~/Library/
+  command: chflags nohidden ~/Library
