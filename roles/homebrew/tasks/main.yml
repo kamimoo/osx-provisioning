@@ -1,15 +1,14 @@
 ---
-- name: update brew
-  register: result
-  ignore_errors: True
-  command: >
-    brew update
+- name: Check if Homebrew is installed
+  stat:
+    path: /usr/local/bin/brew
+  register: homebrew
 
 
-- name: Install homebrew
+- name: Install Homebrew
   shell: >
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  when: result is failed
+  when: not(homebrew.stat.exists and homebrew.stat.executable)
 
 - name: Update Homebrew
   homebrew: update_homebrew=yes
