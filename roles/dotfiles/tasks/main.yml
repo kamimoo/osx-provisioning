@@ -1,7 +1,14 @@
 ---
-- name: Clone configs to XDG_CONFIG_HOME
+- name: Clone dotfiles
   git:
     repo: 'https://github.com/kamimoo/configs'
-    dest: "{{ home_dir }}/.config"
+    dest: "{{ home_dir }}/.dotfiles"
     update: no
+  tags: dotfiles
+
+- name: Install dotfiles
+  block:
+    - command: rcup rcrc
+    - command: rcup
+  tags: dotfiles
 
