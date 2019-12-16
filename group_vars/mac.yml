@@ -1,9 +1,9 @@
 ---
 homebrew_taps:
-  - argon/mas
   - homebrew/core
   - homebrew/cask-fonts
   - homebrew/cask-versions
+  - homebrew-ffmpeg/ffmpeg
   - sanemat/font
   - thoughtbot/formulae
 
@@ -12,6 +12,7 @@ homebrew_packages:
   - { name: automake }
   - { name: boost }
   - { name: libpng }
+  - { name: exiftool }
   - { name: freetype }
   - { name: fontconfig }
   - { name: gettext }
@@ -21,16 +22,19 @@ homebrew_packages:
   - { name: pixman }
   - { name: cairo }
   - { name: carthage }
+  - { name: cocoapods }
   - { name: cmake }
   - { name: colordiff }
   - { name: coreutils }
   - { name: curl }
+  - { name: jq }
+  - { name: httpie }
   - { name: zeromq }
   - { name: czmq }
   - { name: lame }
   - { name: x264 }
   - { name: xvid }
-  - { name: ffmpeg, args: 'with-fdk-aac,with-tools,woth-freetype,with-libass,withlibvorbis,with-libvpx,with-x265' }
+  - { name: homebrew-ffmpeg/ffmpeg/ffmpeg, args: 'with-fdk-aac' }
   - { name: pcre2 }
   - { name: fish }
   - { name: fzf }
@@ -63,14 +67,16 @@ homebrew_packages:
   - { name: reattach-to-user-namespace }
   - { name: rlog }
   - { name: tmux }
+  - { name: tig }
   - { name: utf8proc }
-  - { name: wget, args: 'with-iri' }
+  - { name: wget }
   - { name: swiftlint }
   - { name: xctool }
   - { name: xz }
-  - { name: yarn, args: 'without-node' }
-  - { name: argon/mas/mas }
+  - { name: yarn, args: 'ignore-dependencies' }
+  - { name: mas }
   - { name: libiconv }
+  - { name: rclone }
   - { name: encfs }
   - { name: thoughtbot/formulae/rcm }
 
@@ -79,11 +85,15 @@ homebrew_cask_packages:
   - { name: appcleaner }
   - { name: aquaskk }
   - { name: bartender }
+  - { name: bettertouchtool }
   - { name: bitbar }
+  - { name: bitwarden }
+  - { name: brave-browser }
   - { name: charles }
+  - { name: clipy }
   - { name: dash }
+  - { name: disk-inventory-x }
   - { name: docker }
-  - { name: dropbox }
   - { name: duet }
   - { name: dynalist }
   - { name: firefox }
@@ -91,13 +101,16 @@ homebrew_cask_packages:
   - { name: font-noto-emoji }
   - { name: font-noto-sans-cjk-jp }
   - { name: font-noto-serif-cjk-jp }
+  - { name: font-cica }
   - { name: franz }
   - { name: grammarly }
-  - { name: hyperswitch }
   - { name: imageoptim }
+  - { name: inkdrop }
   - { name: iterm2 }
-  - { name: java8 }
-  - { name: macpass }
+  - { name: karabiner-elements }
+  - { name: keybase }
+  - { name: little-snitch }
+  - { name: paw }
   - { name: provisionql }
   - { name: sequel-pro }
   - { name: sourcetree }
@@ -111,25 +124,20 @@ homebrew_cask_packages:
 mas_apps:
   - { name: "iThoughtsX", id: 720669838 }
   - { name: "Pixelmator", id: 407963104 }
-  - { name: "Deckset", id: 847496013 }
   - { name: "Affinity Designer", id: 824171161 }
   - { name: "DrCleanerPro", id: 1037994372 }
   - { name: "Sip", id: 507257563 }
   - { name: "SQLPro for SQLite", id: 586001240 }
   - { name: "Monosnap", id: 540348655 }
-  - { name: "Disk Diet", id: 445512770 }
   - { name: "Pushbullet", id: 948415170 }
   - { name: "WiFi Signal", id: 525912054 }
-  - { name: "MenuMate", id: 518594271 }
   - { name: "Gemini", id: 463541543 }
   - { name: "Pocket", id: 568494494 }
   - { name: "ForkLift", id: 412448059 }
   - { name: "OneDrive", id: 823766827 }
-  - { name: "RB App Checker Lite", id: 519421117 }
-  - { name: "Slack", id: 803453959 }
   - { name: "Microsoft OneNote", id: 784801555 }
   - { name: "CotEditor", id: 1024640650 }
   - { name: "Divvy", id: 413857545 }
-  - { name: "Quiver", id: 866773894 }
   - { name: "LINE", id: 539883307 }
   - { name: "Agenda", id: 1287445660 }
+  - { name: "MeisterTask", id: 1051767777 }
