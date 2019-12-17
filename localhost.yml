@@ -13,6 +13,7 @@
     - mas
     - defaults
     - fish
+    - firewall
     - iterm2
 
   vars:
