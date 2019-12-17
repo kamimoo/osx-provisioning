@@ -5,7 +5,7 @@
   gather_facts: no
   environment:
     HOMEBREW_NO_ANALYTICS: 1
-  
+
   roles:
     - homebrew
     - dotfiles
@@ -15,6 +15,7 @@
     - fish
     - firewall
     - iterm2
+    - vscode
 
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"

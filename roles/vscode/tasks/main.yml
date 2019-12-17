@@ -1,0 +1,7 @@
+---
+- name: VSCode | Enable key-repeating
+  osx_defaults:
+    domain: com.microsoft.VSCode
+    key: ApplePressAndHoldEnabled
+    type: bool
+    value: false
