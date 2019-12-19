@@ -6,3 +6,10 @@
 
 - name: kill uiserver
   command: killall SystemUIServer
+
+- name: kill touch bar agent
+  command: "{{ item }}"
+  with_items:
+    - pkill TouchBarServer
+    - killall ControlStrip
+  become: yes

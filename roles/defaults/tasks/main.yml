@@ -36,6 +36,14 @@
     type: bool
     value: true
 
+- name: OS X Global | Show function keys on the touch bar
+  osx_defaults:
+    domain: com.apple.touchbar.agent
+    key: PresentationModeGlobal
+    type: string
+    value: functionKeys
+  notify: kill touch bar agent
+
 - name: OS X Global | Tab goes through all controls on dialogs
   osx_defaults:
     key: AppleKeyboardUIMode
