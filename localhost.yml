@@ -16,6 +16,7 @@
     - firewall
     - iterm2
     - vscode
+    - divvy
 
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"

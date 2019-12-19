@@ -1,0 +1,4 @@
+---
+- name: Setup shortcuts
+  shell: echo '{{ lookup('file', 'com.mizage.Divvy.plist') }}' | defaults import com.mizage.Divvy -
+  tags: divvy
