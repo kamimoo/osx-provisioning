@@ -329,11 +329,16 @@
     value: true
 
 - name: Screen capture | Location for screen capture
-  osx_defaults:
-    domain: com.apple.screencapture
-    key: location
-    value: "~/Screenshots"
-  notify: kill uiserver
+  block:
+    - file:
+        path: ~/Screenshots
+        state: directory
+        mode: "0755"
+    - osx_defaults:
+        domain: com.apple.screencapture
+        key: location
+        value: "~/Screenshots"
+      notify: kill uiserver
 
 - name: Screen capture | Type of screen capture
   osx_defaults:
