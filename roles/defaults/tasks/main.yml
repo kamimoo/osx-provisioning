@@ -56,6 +56,49 @@
     type: bool
     value: false
 
+- name: Menu bar | Customize menu items
+  osx_defaults:
+    domain: com.apple.systemuiserver
+    key: menuExtras
+    type: array
+    value:
+      - "/System/Library/CoreServices/Menu Extras/Clock.menu"
+      - "/System/Library/CoreServices/Menu Extras/AirPort.menu"
+      - "/System/Library/CoreServices/Menu Extras/Battery.menu"
+      - "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
+
+- name: Menu bar | Show AirPort icon
+  osx_defaults:
+    domain: com.apple.systemuiserver
+    key: "NSStatusItem Visible com.apple.menuextra.airport"
+    type: bool
+    value: true
+  notify: kill uiserver
+
+- name: Menu bar | Show battery percentage
+  osx_defaults:
+    domain: com.apple.systemuiserver
+    key: "NSStatusItem Visible com.apple.menuextra.battery"
+    type: bool
+    value: true
+  notify: kill uiserver
+
+- name: Menu bar | Show clock
+  osx_defaults:
+    domain: com.apple.systemuiserver
+    key: "NSStatusItem Visible com.apple.menuextra.clock"
+    type: bool
+    value: true
+  notify: kill uiserver
+
+- name: Menu bar | Show bluetooth
+  osx_defaults:
+    domain: com.apple.systemuiserver
+    key: "NSStatusItem Visible com.apple.menuextra.bluetooth"
+    type: bool
+    value: true
+  notify: kill uiserver
+
 - name: Photos | Do not launch with hot plug
   osx_defaults:
     domain: com.apple.ImageCapture
