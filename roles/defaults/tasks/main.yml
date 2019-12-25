@@ -56,6 +56,12 @@
     type: bool
     value: false
 
+- name: OS X Global | Disable auto capitalization
+  osx_defaults:
+    key: NSAutomaticCapitalizationEnabled
+    type: bool
+    value: false
+
 - name: Menu bar | Customize menu items
   osx_defaults:
     domain: com.apple.systemuiserver
