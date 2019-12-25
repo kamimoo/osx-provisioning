@@ -17,6 +17,7 @@
     - iterm2
     - vscode
     - divvy
+    - browser
 
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"

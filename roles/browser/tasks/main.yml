@@ -1,0 +1,56 @@
+---
+- name: Chrome | Use system print preview
+  osx_defaults:
+    domain: "{{ item }}"
+    key: DisablePrintPreview
+    type: bool
+    value: true
+  with_items:
+    - com.brave.Browser
+    - org.chromium.Chromium
+  tags: browser
+
+- name: Expand print dialog
+  osx_defaults:
+    domain: "{{ item }}"
+    key: PMPrintingExpandedStateForPrint2
+    type: bool
+    value: true
+  with_items:
+    - com.brave.Browser
+    - org.chromium.Chromium
+    - org.mozilla.firefox
+  tags: browser
+
+- name: Disable too sensitive swipe navigation
+  block:
+    - osx_defaults:
+        domain: "{{ item }}"
+        key: AppleEnableSwipeNavigateWithScrolls
+        type: bool
+        value: false
+      with_items:
+        - com.brave.Browser
+        - org.chromium.Chromium
+        - org.mozilla.firefox
+    - osx_defaults:
+        domain: "{{ item }}"
+        key: AppleEnableMouseSwipeNavigateWithScrolls
+        type: bool
+        value: false
+      with_items:
+        - com.brave.Browser
+        - org.chromium.Chromium
+        - org.mozilla.firefox
+  tags: browser
+
+- name: Chrome | Open incognito mode by default
+  osx_defaults:
+    domain: "{{ item }}"
+    key: IncognitoModeAvailability
+    type: integer
+    value: 2
+  with_items:
+    - com.brave.Browser
+    - org.chromium.Chromium
+  tags: browser
