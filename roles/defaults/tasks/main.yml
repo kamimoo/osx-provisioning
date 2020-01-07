@@ -68,9 +68,8 @@
     key: menuExtras
     type: array
     value:
-      - "/System/Library/CoreServices/Menu Extras/Clock.menu"
+      - "/System/Library/CoreServices/Menu Extras/VPN.menu"
       - "/System/Library/CoreServices/Menu Extras/AirPort.menu"
-      - "/System/Library/CoreServices/Menu Extras/Battery.menu"
       - "/System/Library/CoreServices/Menu Extras/Bluetooth.menu"
 
 - name: Menu bar | Show AirPort icon
@@ -81,18 +80,10 @@
     value: true
   notify: kill uiserver
 
-- name: Menu bar | Show battery percentage
+- name: Menu bar | Show vpn status
   osx_defaults:
     domain: com.apple.systemuiserver
-    key: "NSStatusItem Visible com.apple.menuextra.battery"
-    type: bool
-    value: true
-  notify: kill uiserver
-
-- name: Menu bar | Show clock
-  osx_defaults:
-    domain: com.apple.systemuiserver
-    key: "NSStatusItem Visible com.apple.menuextra.clock"
+    key: "NSStatusItem Visible com.apple.menuextra.vpn"
     type: bool
     value: true
   notify: kill uiserver

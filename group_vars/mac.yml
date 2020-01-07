@@ -141,3 +141,5 @@ mas_apps:
   - { name: "LINE", id: 539883307 }
   - { name: "Agenda", id: 1287445660 }
   - { name: "MeisterTask", id: 1051767777 }
+  - { name: "Dato", id: 1470584107 }
+  - { name: "Battery Indicator", id: 1206020918 }
