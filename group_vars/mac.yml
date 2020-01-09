@@ -34,7 +34,8 @@ homebrew_packages:
   - { name: lame }
   - { name: x264 }
   - { name: xvid }
-  - { name: homebrew-ffmpeg/ffmpeg/ffmpeg, args: 'with-fdk-aac' }
+  - { name: homebrew-ffmpeg/ffmpeg/ffmpeg, args: "with-fdk-aac" }
+  - { name: awscli }
   - { name: pcre2 }
   - { name: fish }
   - { name: fzf }
@@ -73,11 +74,12 @@ homebrew_packages:
   - { name: swiftlint }
   - { name: xctool }
   - { name: xz }
-  - { name: yarn, args: 'ignore-dependencies' }
+  - { name: yarn, args: "ignore-dependencies" }
   - { name: mas }
   - { name: libiconv }
   - { name: rclone }
   - { name: encfs }
+  - { name: ext4fuse }
   - { name: thoughtbot/formulae/rcm }
 
 homebrew_cask_packages:
@@ -91,6 +93,7 @@ homebrew_cask_packages:
   - { name: brave-browser }
   - { name: charles }
   - { name: clipy }
+  - { name: contexts }
   - { name: dash }
   - { name: disk-inventory-x }
   - { name: docker }
@@ -103,6 +106,7 @@ homebrew_cask_packages:
   - { name: font-noto-serif-cjk-jp }
   - { name: font-cica }
   - { name: franz }
+  - { name: google-backup-and-sync }
   - { name: grammarly }
   - { name: imageoptim }
   - { name: inkdrop }
@@ -119,6 +123,7 @@ homebrew_cask_packages:
   - { name: the-unarchiver }
   - { name: typora }
   - { name: visual-studio-code }
+  - { name: vlc }
   - { name: xquartz }
 
 mas_apps:
@@ -143,3 +148,4 @@ mas_apps:
   - { name: "MeisterTask", id: 1051767777 }
   - { name: "Dato", id: 1470584107 }
   - { name: "Battery Indicator", id: 1206020918 }
+  - { name: "Lungo", id: 1263070803 }
