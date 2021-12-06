@@ -2,12 +2,13 @@
 - name: Setup my Mac
   hosts: mac
   connection: local
-  gather_facts: no
   environment:
     HOMEBREW_NO_ANALYTICS: 1
 
   roles:
-    - homebrew
+    - elliotweiser.osx-command-line-tools
+    - geerlingguy.mac.homebrew
+    - geerlingguy.mac.mas
     - dotfiles
     - fonts
     - mas

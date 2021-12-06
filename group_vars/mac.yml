@@ -5,9 +5,10 @@ homebrew_taps:
   - homebrew/cask-versions
   - homebrew-ffmpeg/ffmpeg
   - sanemat/font
+  - gromgit/fuse
   - thoughtbot/formulae
 
-homebrew_packages:
+homebrew_installed_packages:
   - { name: autoconf }
   - { name: automake }
   - { name: boost }
@@ -75,14 +76,14 @@ homebrew_packages:
   - { name: xctool }
   - { name: xz }
   - { name: yarn, args: "ignore-dependencies" }
-  - { name: mas }
   - { name: libiconv }
   - { name: rclone }
-  - { name: encfs }
-  - { name: ext4fuse }
+  - gromgit/fuse/encfs-mac
+  - gromgit/fuse/ext4fuse-mac
   - { name: thoughtbot/formulae/rcm }
 
-homebrew_cask_packages:
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
   - { name: alfred }
   - { name: appcleaner }
   - { name: aquaskk }
@@ -125,8 +126,9 @@ homebrew_cask_packages:
   - { name: visual-studio-code }
   - { name: vlc }
   - { name: xquartz }
+  - macfuse
 
-mas_apps:
+mas_installed_apps:
   - { name: "iThoughtsX", id: 720669838 }
   - { name: "Pixelmator", id: 407963104 }
   - { name: "Affinity Designer", id: 824171161 }
