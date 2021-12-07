@@ -13,3 +13,4 @@
     - pkill TouchBarServer
     - killall ControlStrip
   become: yes
+  when: (touchbar_process.rc == 0)

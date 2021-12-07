@@ -1,4 +1,9 @@
 ---
+- name: Get touchbar process PID
+  command: pgrep TouchBarServer
+  register: touchbar_process
+  failed_when: touchbar_process.rc not in [0, 1]
+
 - name: OS X Global | Trackpad
   osx_defaults:
     key: com.apple.trackpad.scaling
