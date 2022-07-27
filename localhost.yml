@@ -10,15 +10,12 @@
     - geerlingguy.mac.homebrew
     - geerlingguy.mac.mas
     - dotfiles
-    - fonts
-    - mas
     - defaults
-    - fish
-    - firewall
+    - fonts
     - iterm2
     - vscode
     - divvy
-    - browser
+    - docker
 
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"

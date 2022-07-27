@@ -7,75 +7,56 @@ homebrew_taps:
   - sanemat/font
   - gromgit/fuse
   - thoughtbot/formulae
+  - lyraphase/pcloud
 
 homebrew_installed_packages:
   - { name: autoconf }
   - { name: automake }
-  - { name: boost }
+  - { name: asdf }
+  - { name: bat }
+  - { name: bitwarden-cli }
+  - { name: colima }
+  - { name: exa }
   - { name: libpng }
+  - { name: docker }
+  - { name: docker-compose }
   - { name: exiftool }
   - { name: freetype }
   - { name: fontconfig }
-  - { name: gettext }
   - { name: libffi }
-  - { name: pcre }
+  - { name: gh }
+  - { name: git }
   - { name: glib }
-  - { name: pixman }
-  - { name: cairo }
   - { name: carthage }
   - { name: cocoapods }
-  - { name: cmake }
   - { name: colordiff }
   - { name: coreutils }
   - { name: curl }
   - { name: jq }
   - { name: httpie }
-  - { name: zeromq }
-  - { name: czmq }
   - { name: lame }
   - { name: x264 }
   - { name: xvid }
   - { name: homebrew-ffmpeg/ffmpeg/ffmpeg, args: "with-fdk-aac" }
   - { name: awscli }
-  - { name: pcre2 }
   - { name: fish }
   - { name: fzf }
   - { name: jpeg }
   - { name: libtiff }
   - { name: libtool }
-  - { name: pkg-config }
-  - { name: gobject-introspection }
-  - { name: icu4c }
-  - { name: harfbuzz }
-  - { name: pango }
   - { name: fontforge }
-  - { name: gdbm }
-  - { name: git-flow }
   - { name: go }
-  - { name: intltool }
   - { name: openssl }
   - { name: neovim }
-  - { name: nodenv }
-  - { name: libevent }
-  - { name: libidn }
-  - { name: libsodium }
-  - { name: libxml2 }
-  - { name: libxslt }
-  - { name: peco }
   - { name: pngquant }
-  - { name: ruby-build }
-  - { name: rbenv }
   - { name: readline }
   - { name: reattach-to-user-namespace }
-  - { name: rlog }
+  - { name: ripgrep }
   - { name: tmux }
   - { name: tig }
   - { name: utf8proc }
   - { name: wget }
-  - { name: swiftlint }
-  - { name: xctool }
   - { name: xz }
-  - { name: yarn, args: "ignore-dependencies" }
   - { name: libiconv }
   - { name: rclone }
   - gromgit/fuse/encfs-mac
@@ -84,43 +65,35 @@ homebrew_installed_packages:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - { name: alfred }
   - { name: appcleaner }
   - { name: aquaskk }
   - { name: bartender }
   - { name: bettertouchtool }
-  - { name: bitbar }
   - { name: bitwarden }
   - { name: brave-browser }
   - { name: charles }
   - { name: clipy }
+  - { name: clickup }
   - { name: contexts }
   - { name: dash }
   - { name: disk-inventory-x }
-  - { name: docker }
-  - { name: duet }
-  - { name: dynalist }
   - { name: firefox }
   - { name: font-noto-color-emoji }
   - { name: font-noto-emoji }
   - { name: font-noto-sans-cjk-jp }
   - { name: font-noto-serif-cjk-jp }
   - { name: font-cica }
-  - { name: franz }
-  - { name: google-backup-and-sync }
   - { name: grammarly }
   - { name: imageoptim }
-  - { name: inkdrop }
   - { name: iterm2 }
   - { name: karabiner-elements }
-  - { name: keybase }
   - { name: little-snitch }
+  - { name: microsoft-edge }
+  - { name: raycast }
   - { name: paw }
+  - { name: pcloud-drive }
   - { name: provisionql }
-  - { name: sequel-pro }
-  - { name: sourcetree }
-  - { name: srware-iron }
-  - { name: station }
+  - { name: pushplaylabs-sidekick }
   - { name: the-unarchiver }
   - { name: typora }
   - { name: visual-studio-code }
@@ -132,11 +105,8 @@ mas_installed_apps:
   - { name: "iThoughtsX", id: 720669838 }
   - { name: "Pixelmator", id: 407963104 }
   - { name: "Affinity Designer", id: 824171161 }
-  - { name: "DrCleanerPro", id: 1037994372 }
   - { name: "Sip", id: 507257563 }
-  - { name: "SQLPro for SQLite", id: 586001240 }
   - { name: "Monosnap", id: 540348655 }
-  - { name: "Pushbullet", id: 948415170 }
   - { name: "WiFi Signal", id: 525912054 }
   - { name: "Gemini", id: 463541543 }
   - { name: "Pocket", id: 568494494 }
@@ -146,8 +116,6 @@ mas_installed_apps:
   - { name: "CotEditor", id: 1024640650 }
   - { name: "Divvy", id: 413857545 }
   - { name: "LINE", id: 539883307 }
-  - { name: "Agenda", id: 1287445660 }
-  - { name: "MeisterTask", id: 1051767777 }
   - { name: "Dato", id: 1470584107 }
   - { name: "Battery Indicator", id: 1206020918 }
   - { name: "Lungo", id: 1263070803 }

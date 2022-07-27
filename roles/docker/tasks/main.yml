@@ -1,0 +1,6 @@
+- name: Install compose plugin
+  file:
+    src: /opt/homebrew/opt/docker-compose/bin/docker-compose 
+    dest: "{{ home_dir }}/.docker/cli-plugins/docker-compose"
+    state: link
+
